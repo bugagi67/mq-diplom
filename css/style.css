@@ -892,6 +892,10 @@ body {
     font-size: 40px;
   }
 
+  .menu li {
+    width: 0px;
+  }
+
   .title-new-block {
     font-size: 18px;
   }
@@ -996,7 +1000,7 @@ body {
   }
 
   .article-masive {
-    max-width: 411px;
+    max-width: 430px;
     margin: 0 auto;
   }
 
