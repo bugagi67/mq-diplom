@@ -115,6 +115,10 @@ body {
   text-align: left;
 }
 
+option {
+  color: #888888;
+}
+
 .title-pop-up::after {
   content: "";
   width: 65px;
@@ -1154,8 +1158,8 @@ body {
 
   .pop-up-content {
     max-width: 330px;
-    top: 55px;
-    left: 15px;
+    top: calc(50% - (690px/2));
+    left: calc(50% - (330px/2));
     padding: 30px 25px;
   }
 
