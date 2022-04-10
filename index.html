@@ -22,7 +22,12 @@
 					<div class="numb">
 						<label>
 							<p class="pop-subtitle pop-arrows">Как часто вы заходите на сайт?</p>
-							<input class="pop-number" type="number" min="1" max="10" placeholder="Почти каждый день" required>
+							<select class="pop-number" required>
+								<option value="Почти каждый день">Почти каждый день</option>
+								<option value="Каждый день">Каждый день</option>
+								<option value="2 раза в неделю">2 раза в неделю</option>
+								<option value="Никогда">Никогда</option>
+							</select>
 						</label>
 					</div>	
 					<div class="check-box">
@@ -590,7 +595,6 @@
 										</div>
 								</div>
 						</footer>
-
 					</div>
 		</section>
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -599,6 +603,17 @@
 				$('.menu-btn span:nth-child(1)').toggleClass('first');
 				$('.menu-btn span:nth-child(2)').toggleClass('middle');
 				$('.menu-btn span:nth-child(3)').toggleClass('last');
+			})
+		</script>
+		<script>
+			$('.header-logo').click(function(){
+				$('._hidden').toggleClass('_visabiliti');
+				
+			})
+		</script>
+		<script>
+			$('.pop-up-close').click(function(){
+				$(".pop-up").removeClass("_visabiliti");
 			})
 		</script>
 </body>
