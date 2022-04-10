@@ -883,6 +883,7 @@ body {
   color: #999999;
 }
 
+
 /* media */
 
 
@@ -959,20 +960,20 @@ body {
     background-color: #fff;
     display: block;
     width: 23px;
-    margin: 3px;
+    margin: 5px;
   }
 
-  .menu-btn:hover span:nth-child(1) {
-    transform: translate(4px, -7px) rotate(45deg);
+  .first {
+    transform: translate(5px, -9px) rotate(45deg);
     transform-origin: left top;
   }
 
-  .menu-btn:hover span:nth-child(2) {
+  .middle {
     transform: scale(0);
   }
 
-  .menu-btn:hover span:nth-child(3) {
-    transform: translate(-3px, -20px) rotate(-45deg);
+  .last {
+    transform: translate(-1px, -25px) rotate(-45deg);
     transform-origin: right bottom;
   }
 
@@ -1006,9 +1007,6 @@ body {
     visibility: visible;
   }
 
-
-  }
-
   .trands-images {
     flex-wrap: wrap;
   }
@@ -1026,13 +1024,15 @@ body {
 
   .article-short::after {
     content: "";
-    max-width: 381px;
+    width: 100%;
     height: 3px;
     background-color: #eee;
     position: absolute;
     left: 0;
-    margin-top: 20px;
+    margin-top: -35px;
   }
+
+}
   
 
 
@@ -1056,16 +1056,6 @@ body {
 
   .article-short {
     margin: 0 30px 60px 0;
-  }
-
-  .article-short::after {
-    content: "";
-    max-width: 381px;
-    height: 3px;
-    background-color: #eee;
-    position: absolute;
-    left: 0;
-    margin-top: 20px;
   }
 
   .article-short-content {
@@ -1121,6 +1111,12 @@ body {
     font-size: 16px;
   }
 
+  .title-new-block::before{
+    top: 95px;
+    left: 40%;
+
+  }
+
   .title-trand {
     font-size: 16px;
   }
@@ -1131,6 +1127,11 @@ body {
 
   .new-post {
     font-size: 16px;
+  }
+
+  .new-post::after {
+    top: 28px;
+    left: 40%;
   }
 
   .shop-title {
@@ -1180,7 +1181,7 @@ body {
   }
 
   .article-short {
-    margin: 0 0 35px;
+    margin: 0 0 50px;
   }
 
   .illustration {
