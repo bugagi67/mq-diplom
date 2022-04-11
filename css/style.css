@@ -93,7 +93,6 @@ body {
 .pop-up-content {
   position: fixed;
   width: 390px;
-  height: 590px;
   z-index: 100;
   background-color: #fff;
   top: calc(50% - 295px);
@@ -1158,7 +1157,7 @@ option {
 
   .pop-up-content {
     max-width: 330px;
-    top: calc(50% - (690px/2));
+    /* top: calc(50% - (690px/2)); */
     left: calc(50% - (330px/2));
     padding: 30px 25px;
   }
