@@ -95,7 +95,7 @@ body {
   width: 390px;
   z-index: 100;
   background-color: #fff;
-  top: calc(50% - 295px);
+  top: calc(50% - 285px);
   left: calc(50% - 195px);
   text-align: center;
   padding: 50px 30px;
@@ -112,10 +112,6 @@ body {
 
 .pop-up-form {
   text-align: left;
-}
-
-option {
-  color: #888888;
 }
 
 .title-pop-up::after {
@@ -1099,6 +1095,10 @@ option {
 
 @media (max-width: 767px) {
 
+  .title-pop-up::after {
+    top: 65px;
+  }
+
   .header {
     background-image: url(../images/banner-mobile.jpg);
     padding-bottom: 215px;
@@ -1171,10 +1171,6 @@ option {
     right: 44px;
   }
 
-  .trands-images {
-    flex-wrap: wrap;
-  }
-
   .trand {
     width: 100%;
     margin-bottom: 2px;
@@ -1245,7 +1241,11 @@ option {
     width: 330px;
     }
 
+}
 
-
-
+@media (max-width: 767px) and (orientation: landscape) {
+  
+  .trand {
+    width: calc(50% - 1px);
+  }
 }
